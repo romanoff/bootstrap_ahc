@@ -1,0 +1,40 @@
+<button type="button" class="btn
+{{if .type}}
+  {{if .type | eq "primary"}}
+  btn-primary
+  {{end}}
+  {{if .type | eq "success"}}
+  btn-success
+  {{end}}
+  {{if .type | eq "info"}}
+  btn-info
+  {{end}}
+  {{if .type | eq "warning"}}
+  btn-warning
+  {{end}}
+  {{if .type | eq "danger"}}
+  btn-danger
+  {{end}}
+  {{if .type | eq "link"}}
+  btn-link
+  {{end}}
+{{else}}
+btn-default
+{{end}}
+
+{{if .size}}
+  {{if .size | eq "large" }}
+  btn-lg
+  {{end}}
+  {{if .size | eq "small" }}
+  btn-sm
+  {{end}}
+  {{if .size | eq "xsmall" }}
+  btn-xs
+  {{end}}
+{{end}}
+
+{{if .block}}
+btn-block
+{{end}}
+" {{if .disabled}}disabled="disabled"{{end}}>{{.name | html}}</button>
