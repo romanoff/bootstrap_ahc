@@ -1,4 +1,5 @@
-<button type="button" class="btn
+{{define "cssClass"}}btn{{end}}
+<button type="button" class="{{template "cssClass" .}}
 {{if .type}}
   {{if .type | eq "primary"}}
   btn-primary
