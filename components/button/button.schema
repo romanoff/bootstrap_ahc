@@ -1,0 +1,5 @@
+name {string} Name description.
+type {string=}{primary|success|info|warning|danger|link} Button type.
+size {string=}{large|small|xsmall} Button size.
+block {bool=} Specifies if button should be shown as block.
+disabled {bool=} Specifies if button is disabled.

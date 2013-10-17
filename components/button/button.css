@@ -1,6 +1,7 @@
 /**
  * @provide 'bootstrap.Button'
  * @jstype 'control'
+ * @jstemplate 'mp.Button'
  */
 .btn {
   display: inline-block;
